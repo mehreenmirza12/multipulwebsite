@@ -3,10 +3,9 @@
 body {
     margin: 0;
     font-size: "poppins" , sans-serif;
-    background-color: #803131;
+    background-color: #640b0b;
 
 }
-
 
 
 .navbar {
@@ -94,7 +93,7 @@ body {
 
 .menu-card img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -149,7 +148,7 @@ body {
 }
 
 body {
-    background-color: #910505; /* Light creamy background */
+    background-color: #610202; /* Light creamy background */
     color: #333;
 }
 
@@ -167,14 +166,12 @@ body {
 
 .about-image img {
     width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 250px;
 }
 
 .about-content {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .about-content h1 {
@@ -234,3 +231,4 @@ body {
         flex-direction: column;
     }
 }
+

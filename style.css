@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    font-size: "poppins" , sans-serif;
+    padding: 0;
+    font-family: "poppins" , sans-serif;
     background-color: #640b0b;
 
 }
@@ -14,6 +15,7 @@ body {
     padding: 20px 5%;
     background: #dd6515;
     color: white;
+    width: 100%;
 }
 
 .nav-links li {
@@ -28,14 +30,14 @@ body {
 }
 
 .hero {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('coffee-bg.jpg');
+    height: 100vh;
     background-size: cover;
     display: flex;
     align-items: center;
     color: white;
     padding: 0 10%;
 }
+
 
 .btn {
     background: #d4af37;
@@ -45,17 +47,29 @@ body {
     text-decoration: none;
     
 }
-.right{
-    width: 50%;
-    height: 100%;
+.right-image{
+    flex: 1;
+
 }
-.right img{
-    width: 500px;
-    margin-left: 80px;
+
+.right image img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+@media(max-width: 768px){
+    .hero .hero-content{
+    flex-direction: column;
+    text-align: center;
+    }
+    .hero-image img{
+        width: 80%;
+        margin-top: 15px;
+
+    }
 }
 
 
-    
 
 /* Menu Page Styles */
 .menu-container {
@@ -147,10 +161,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: #610202; /* Light creamy background */
-    color: #333;
-}
 
 .about-section {
     padding: 80px 10%;
@@ -166,7 +176,8 @@ body {
 
 .about-image img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
+
 }
 
 .about-content {
@@ -189,12 +200,12 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 10px 25px;
     background-color: #eb6d14;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: 0.3s;
+    
 }
 
 .btn:hover {
@@ -224,11 +235,30 @@ body {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .about-content {
-        text-align: center;
-    }
     .container {
+        flex: column;
+        gap: 15px;
+    }
+    .home-content {
+        text-align: center;
+        padding: 10px;
+    }
+    .menu-content{
+        text-align: center;
+        padding: 10px;
+    }
+    .about-content{
+        text-align: center;
+        padding: 10px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .navbar{
         flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
 
